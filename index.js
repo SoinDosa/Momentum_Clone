@@ -1,5 +1,5 @@
 const imageURL = "https://picsum.photos/1280/720";
-const key = "263404395cda9c91b51f38eda7b3bb09"
+const key = "YOUR API KEY"
 
 async function setRenderBackground() {
     const result = await axios.get(imageURL, { responseType: "blob" });
