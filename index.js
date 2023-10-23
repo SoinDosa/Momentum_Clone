@@ -1,5 +1,5 @@
 const imageURL = "https://picsum.photos/1280/720";
-const key = "YOUR KEY!"
+const key = "263404395cda9c91b51f38eda7b3bb09"
 
 async function setRenderBackground() {
     const result = await axios.get(imageURL, { responseType: "blob" });
@@ -80,7 +80,7 @@ async function renderWeather() {
         console.log(weatherList);
     
         const modalBody = document.querySelector(".modal-body");
-        modalBody.innerHTML = weatherList.map(e => weatherWrapperComponent(e).join(""));
+        modalBody.innerHTML = weatherList.map(e => weatherWrapperComponent(e)).join("");
     }
     catch(error) {
         alert(error);
